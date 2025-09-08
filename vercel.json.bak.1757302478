@@ -7,12 +7,20 @@
       "config": {
         "distDir": ".next"
       }
+    },
+    {
+      "src": "**/*.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/$1"
     }
   ]
 }

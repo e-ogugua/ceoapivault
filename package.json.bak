@@ -6,13 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "deploy:staging": "vercel --prod",
-    "deploy:production": "vercel --prod --confirm",
-    "preview": "vercel preview"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.0",
